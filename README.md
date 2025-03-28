@@ -99,9 +99,9 @@ next monitor on DP-1 is configured as the primary (`-p`) with an x,y offset of
 correct y offset with multiple monitors, you can simple experiment with the value
 to get an appropriate alignment.
 
-# BTW Notes\Changelog:
+## BTW Notes\Changelog:
 
-03-27-25: Forked from (jadahl/gnome-monitor-config)[https://github.com/jadahl/gnome-monitor-config.git]
+### 03-27-25: Forked from (jadahl/gnome-monitor-config)[https://github.com/jadahl/gnome-monitor-config.git]
     - I have a complicated monitor situation at scale with Debian to work on.
     - I added some functionality to the Makefile that I was looking for. check_deps,
       install, uninstall, and a build target that nukes the build/ directory and rebuilds.
