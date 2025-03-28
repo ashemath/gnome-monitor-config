@@ -1,14 +1,31 @@
+# Get the dependencies
+
+The following command can be used to install dependencies:
+
+```shell
+$ sudo get_deps
+```
+
 # Building
 
 The following steps can be used to build `gnome-monitor-config`
 
 ```shell
-$ meson build
-$ cd build
-$ meson compile
+$ sudo make get_deps
+$ make all
 ```
 
-The output binary can be found in `build/src/gnome-monitor-config`.
+# Installing
+
+After compiling, install `gnome-monitor-config` with the following
+command
+
+```shell
+$ sudo make install
+
+```
+
+The output binary is found in `build/src/`.
 
 # Usage
 
@@ -81,3 +98,11 @@ next monitor on DP-1 is configured as the primary (`-p`) with an x,y offset of
 [1440, 270] relative to the first one with normal orientation. For getting the
 correct y offset with multiple monitors, you can simple experiment with the value
 to get an appropriate alignment.
+
+# BTW Notes\Changelog:
+
+03-27-25: Forked from (jadahl/gnome-monitor-config)[https://github.com/jadahl/gnome-monitor-config.git]
+    - I have a complicated monitor situation at scale with Debian to work on.
+    - I added some functionality to the Makefile that I was looking for. check_deps,
+      install, uninstall, and a build target that nukes the build/ directory and rebuilds.
+    - `gnome-monitor-config list` appears to work on Debian.
