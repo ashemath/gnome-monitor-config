@@ -99,6 +99,16 @@ next monitor on DP-1 is configured as the primary (`-p`) with an x,y offset of
 correct y offset with multiple monitors, you can simple experiment with the value
 to get an appropriate alignment.
 
+## Mirrored Screens Example
+
+If you want to mirror displays, it's a matter of adding two displays to the same logical display.
+We need multiple `-M` arguments, so both are set to primary and exist superimposed on
+one another. To switch to a mirror, do something like this:
+
+```shell
+gnome-monitor-config set -LpM eDP-1 -M HDMI-1 -t normal -m 1920x1080@60.000
+```
+
 ## BTW Notes\Changelog:
 
 ### 03-27-25: Forked from [jadahl/gnome-monitor-config](https://github.com/jadahl/gnome-monitor-config.git)
