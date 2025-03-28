@@ -101,7 +101,7 @@ to get an appropriate alignment.
 
 ## BTW Notes\Changelog:
 
-### 03-27-25: Forked from (jadahl/gnome-monitor-config)[https://github.com/jadahl/gnome-monitor-config.git]
+### 03-27-25: Forked from [jadahl/gnome-monitor-config](https://github.com/jadahl/gnome-monitor-config.git)
     - I have a complicated monitor situation at scale with Debian to work on.
     - I added some functionality to the Makefile that I was looking for. check_deps,
       install, uninstall, and a build target that nukes the build/ directory and rebuilds.
